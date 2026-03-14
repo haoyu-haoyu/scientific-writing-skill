@@ -182,7 +182,65 @@ Use passive to manage information flow (keeping the topic in subject position), 
 
 ---
 
-## 7. Cohesion Devices
+## 7. Punctuation and Typographic Conventions
+
+### Dashes: Three Distinct Characters
+
+| Character | Name | Unicode | When to Use | Example |
+|---|---|---|---|---|
+| — | Em dash | U+2014 | Parenthetical insertion, abrupt break, elaboration | "The model — trained on MIMIC-IV — achieved 0.87 AUROC" |
+| – | En dash | U+2013 | Numeric ranges, compound modifiers between equal elements | "pages 1–10", "dose–response", "2019–2024", "New York–London flight" |
+| - | Hyphen | U+002D | Compound words, prefixes, line breaks | "well-known", "pre-trained", "multi-task", "state-of-the-art" |
+
+### Em Dash Usage by Venue
+
+| Venue | Convention | Example |
+|---|---|---|
+| Nature / Science | No spaces around em dash | "word—word" |
+| Lancet / BMJ | Spaced em dash or en dash | "word — word" or "word – word" |
+| IEEE | Spaced em dash | "word — word" |
+| NeurIPS / ICML | Varies; often spaced em dash | "word --- word" in LaTeX (`---`) |
+| APA style | No spaces around em dash | "word—word" |
+
+### En Dash Rules (Frequently Violated)
+
+- **Numeric ranges:** "patients aged 18–65", "95% CI: 0.82–0.91", "pp. 234–241"
+- **Compound modifiers with multi-word elements:** "New York–based", "pre–post comparison", "physician–patient relationship"
+- **NOT for simple compound words** (use hyphen): "well-known" not "well–known"
+- In LaTeX: `--` produces en dash (–), `-` produces hyphen (-)
+
+### Hyphen Rules
+
+- **Compound adjectives before a noun:** "well-known method", "state-of-the-art performance"
+- **No hyphen after adverbs ending in -ly:** "newly proposed method" (no hyphen)
+- **No hyphen when compound comes after the noun:** "the method is well known" (no hyphen)
+- **Prefixes:** "pre-training", "multi-modal", "non-linear" (conventions vary; check venue style)
+
+### Quotation Marks and Typographic Characters
+
+| Issue | Problem | Fix |
+|---|---|---|
+| Curly/smart quotes (" " ' ') | Copied from ChatGPT, Word, Google Docs; may break LaTeX compilation | Replace with straight quotes (" " ' ') or LaTeX `` ` `` and `'` |
+| Curly apostrophes (') | Same source; invisible compilation errors | Replace with straight apostrophe (') |
+| Non-breaking spaces | Copied from web; invisible but cause layout issues | Replace with regular spaces |
+| Ellipsis character (…) | Single Unicode character vs three dots | Use three dots with spaces (. . .) or LaTeX `\ldots` per venue style |
+
+### LaTeX-Specific Punctuation
+
+| What You Want | LaTeX Input | Output |
+|---|---|---|
+| Em dash | `---` | — |
+| En dash | `--` | – |
+| Hyphen | `-` | - |
+| Opening double quote | ` `` ` | " |
+| Closing double quote | `''` | " |
+| Ellipsis | `\ldots` | … |
+| Non-breaking space | `~` | (prevents line break) |
+| Percent after number | `50\%` | 50% |
+
+---
+
+## 8. Cohesion Devices
 
 ### The "This + Noun" Rule
 ALWAYS follow "this" with a noun. Bare "this" is the most common source of ambiguity.
@@ -211,7 +269,7 @@ Repeat key terms consistently. Do NOT use "elegant variation" (calling the same 
 
 ---
 
-## 8. Tense Quick Reference
+## 9. Tense Quick Reference
 
 | Section | Tense | Example |
 |---|---|---|
@@ -228,7 +286,7 @@ Repeat key terms consistently. Do NOT use "elegant variation" (calling the same 
 
 ---
 
-## 9. Common Mistakes Catalogued by Editors
+## 10. Common Mistakes Catalogued by Editors
 
 ### Structural Mistakes (Most Common Rejection Reasons)
 
@@ -261,7 +319,7 @@ Repeat key terms consistently. Do NOT use "elegant variation" (calling the same 
 
 ---
 
-## 10. AI-Pattern Vocabulary Blocklist
+## 11. AI-Pattern Vocabulary Blocklist
 
 These words/phrases are statistically overrepresented in LLM-generated text and should be avoided in scientific writing:
 
@@ -296,7 +354,7 @@ These words/phrases are statistically overrepresented in LLM-generated text and 
 
 ---
 
-## 11. Cross-Discipline Register Differences
+## 12. Cross-Discipline Register Differences
 
 ### CS/Engineering Register
 - "We propose..." (active, first person)
@@ -326,7 +384,7 @@ These words/phrases are statistically overrepresented in LLM-generated text and 
 
 ---
 
-## 12. The Swales CARS Model for Introductions
+## 13. The Swales CARS Model for Introductions
 
 **Move 1 — Establishing a territory:**
 - Claim centrality of the research area
@@ -347,7 +405,7 @@ These words/phrases are statistically overrepresented in LLM-generated text and 
 
 ---
 
-## 13. Key Reference Works
+## 14. Key Reference Works
 
 | Work | Key Contribution |
 |---|---|
